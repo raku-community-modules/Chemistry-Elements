@@ -1,0 +1,24 @@
+use Test;
+use Chemistry::Elements;
+
+my @tests =
+  'pigLatin',
+  ( 'en', 'en_US', 'default' ),
+  'en_UK',
+  'de',
+  'ru',
+;
+
+plan 1 + 2 + @tests;
+
+my $class = Chemistry::Elements;
+can-ok $class, 'lang_str_to_column';
+
+for ^@tests -> $index {
+    my @list = @tests[$index].flat;
+    for @list -> $item {
+        is $class.lang_str_to_column( $item ), $index, "$item returns column $index";
+    }
+}
+
+# vim: expandtab shiftwidth=4

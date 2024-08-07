@@ -1,8 +1,9 @@
-use v6;
 use Test;
 
 use Chemistry::Elements;
 
+plan 1;
+
 ok 1, 'Chemistry::Elements is loaded';
 
-done-testing();
+# vim: expandtab shiftwidth=4

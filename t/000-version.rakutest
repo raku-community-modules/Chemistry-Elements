@@ -1,10 +1,10 @@
-use v6;
-
 use Test;
 use META6;
 
 use Chemistry::Elements;
 constant package-name = 'Chemistry::Elements';
+
+plan 3;
 
 my $module-version = Chemistry::Elements.^ver;
 ok $module-version.defined, 'Module specifies a version';
@@ -19,4 +19,4 @@ diag "META6 version is $meta-version";
 
 is $meta-version, $module-version, 'META6 version matches module version';
 
-done-testing();
+# vim: expandtab shiftwidth=4

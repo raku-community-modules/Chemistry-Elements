@@ -1,23 +1,33 @@
 {
-"authors": [
-	"brian d foy"
-	],
-"depends": [],
-"description": "Raku extension for working with the Periodic Table of Elements",
-"name": "Chemistry::Elements",
-"perl": "6.c",
-"license": "Artistic-2.0",
-"provides": {
-	"Chemistry::Elements": "lib/Chemistry/Elements.pm6"
-	},
-"support": {
-	"source": "https://github.com/briandfoy/raku-chemistry-elements.git"
-	},
-"test-depends": [
-	"Test",
-	"Test::META"
-	],
-"version": "0.001003",
-"tags": [ "chemistry", "Z", "atomic number" ],
-"source-url" : "https://github.com/briandfoy/raku-chemistry-elements.git"
+  "auth": "zef:raku-community-modules",
+  "authors": [
+    "brian d foy",
+    "Raku Community"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "do things with the Periodic Table",
+  "license": "Artistic-2.0",
+  "name": "Chemistry::Elements",
+  "perl": "6.c",
+  "provides": {
+    "Chemistry::Elements": "lib/Chemistry/Elements.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/raku-community-modules/Chemistry-Elements.git",
+  "support": {
+    "source": "https://github.com/raku-community-modules/Chemistry-Elements"
+  },
+  "tags": [
+    "chemistry",
+    "Z",
+    "atomic number"
+  ],
+  "test-depends": [
+    "Test::META"
+  ],
+  "version": "0.001004"
 }

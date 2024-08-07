@@ -1,44 +1,34 @@
-use v6;
 use Test;
+use Chemistry::Elements;
 
-plan 15;
+plan 14;
 
-constant package-name = 'Chemistry::Elements';
-use-ok package-name or bail-out "{package-name} did not compile";
-use ::(package-name);
-my $class = ::(package-name);
-
+my $class = Chemistry::Elements;
 my $method  = 'get_name_by_Z';
 can-ok $class, $method;
 
 my $callable = $class.^find_method( $method );
 
-is
-	$class."$method"(37), 'Rubidium',
-	'Z=37 is Rubidium';
+is $class."$method"(37), 'Rubidium',
+  'Z=37 is Rubidium';
 
-is
-	$class."$method"(37, "en"), 'Rubidium',
-	'Z=37 is Rubidium';
+is $class."$method"(37, "en"), 'Rubidium',
+  'Z=37 is Rubidium';
 
-is
-	$class."$method"(37, "de"), 'Rubidium',
-	'Z=37 ist Rubidium';
+is $class."$method"(37, "de"), 'Rubidium',
+  'Z=37 ist Rubidium';
 
-is
-	$class.$callable(1), 'Hydrogen',
-	'Z=1 is Hydrogen';
+is $class.$callable(1), 'Hydrogen',
+  'Z=1 is Hydrogen';
 
-is
-	$class.$callable(1, "en"), 'Hydrogen',
-	'Z=1 is Hydrogen';
+is $class.$callable(1, "en"), 'Hydrogen',
+  'Z=1 is Hydrogen';
 
-is
-	$class."$method"(1, "de"), 'Wasserstoff',
-	'Z=1 is Wasserstoff';
+is $class."$method"(1, "de"), 'Wasserstoff',
+  'Z=1 is Wasserstoff';
 
 lives-ok { for 1..118 -> $Z { $class."$method"($Z, "en") } },
-	'Z is valid for 1 to 118';
+  'Z is valid for 1 to 118';
 
 lives-ok { $class."$method"("37", "en") }, 'Z is valid Str "37"';
 
@@ -53,4 +43,4 @@ dies-ok { $class."$method"(37.3, "en") }, '37.3 is a not valid Z';
 dies-ok { $class."$method"('100foo', "en") }, 'A convertible Str is a not valid Z';
 dies-ok { $class."$method"('Some Str', "en") }, 'A Str is not a valid Z';
 
-done-testing;
+# vim: expandtab shiftwidth=4
