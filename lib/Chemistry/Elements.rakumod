@@ -184,10 +184,10 @@ my constant %names =
 
 #| Do various things with chemical elements. Convert between symbols,
 #| names, and atomic numbers.
-class Chemistry::Elements:auth<zef:raku-community-modules>:ver<0.001004> {
+class Chemistry::Elements:auth<zef:raku-community-modules>:ver<0.2> {
 
-    # https://rt.perl.org/Ticket/Display.html?id=126763
-    # http://stackoverflow.com/q/40097868/2766176
+# https://rt.perl.org/Ticket/Display.html?id=126763
+# http://stackoverflow.com/q/40097868/2766176
 #| A Str that is one of the known chemical symbols
     subset ZInt of Cool is export where {
         state ( $min, $max ) = %names.keys.sort( { $^a <=> $^b } ).[0,*-1];

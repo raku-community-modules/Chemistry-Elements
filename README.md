@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/raku-community-modules/Chemistry-Elements/actions/workflows/linux.yml/badge.svg)](https://github.com/raku-community-modules/Chemistry-Elements/actions) [![Actions Status](https://github.com/raku-community-modules/Chemistry-Elements/actions/workflows/macos.yml/badge.svg)](https://github.com/raku-community-modules/Chemistry-Elements/actions) [![Actions Status](https://github.com/raku-community-modules/Chemistry-Elements/actions/workflows/windows.yml/badge.svg)](https://github.com/raku-community-modules/Chemistry-Elements/actions)
+[![Actions Status](https://github.com/raku-community-modules/Chemistry-Elements/actions/workflows/linux.yml/badge.svg)](https://github.com/raku-community-modules/Chemistry-Elements/actions) [![Actions Status](https://github.com/raku-community-modules/Chemistry-Elements/actions/workflows/macos.yml/badge.svg)](https://github.com/raku-community-modules/Chemistry-Elements/actions)
 
 NAME
 ====
