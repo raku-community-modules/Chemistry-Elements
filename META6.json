@@ -27,6 +27,7 @@
     "atomic number"
   ],
   "test-depends": [
+    "META6",
     "Test::META"
   ],
   "version": "0.001004"
