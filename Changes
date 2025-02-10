@@ -1,6 +1,8 @@
 Revision history for Chemistry::Elements
 
 {{$NEXT}}
+
+0.2.1  2025-02-10T21:27:09+01:00
     - Fix improper use of item, when what was needed is .clone
 
 0.2  2024-08-07T12:51:52+02:00
