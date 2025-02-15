@@ -184,7 +184,7 @@ my constant %names =
 
 #| Do various things with chemical elements. Convert between symbols,
 #| names, and atomic numbers.
-class Chemistry::Elements:auth<zef:raku-community-modules>:ver<0.2.1> {
+class Chemistry::Elements:auth<zef:raku-community-modules>:ver<0.2.2> {
 
 # https://rt.perl.org/Ticket/Display.html?id=126763
 # http://stackoverflow.com/q/40097868/2766176
